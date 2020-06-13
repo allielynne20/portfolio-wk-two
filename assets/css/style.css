@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url("../tealsharkbig.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Color Palette */
+:root {
+    --teal: rgba(0,153,153, 1);
+    --yellow: rgba(255,255,102, 1);
+    --pink: rgba(255,153,255, 1);
+    --purple: rgba(75,0,130, 1);
+    --lightp: rgba(255, 240, 245, 1);
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--teal);
+}
+
+/* Header */
+header {
+    padding: 30px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255,153,255, 0.7);
+    color: var(--yellow);
+    list-style: none;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    padding: 50px;
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--yellow);
+}
+.hero {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+color: var(--pink);
+font-size: 50px;
+text-shadow: 0 0 10px rgba(255, 240, 245, 0.5);
+font-weight: bold;
+padding: 20px 0 20px;
+margin: 0 50px;
+border-bottom: 2px solid lavenderblush;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+h2 {
+    display: inline;
+    justify-content: left;
+    color: var(--yellow);
+    text-align: center;
+    font-weight: normal;
+    width: 100%; 
+    padding: 10px;
+    margin: 20px 65px;
+    border-bottom: 1px solid lavenderblush;
+}
+.about p {
+    display: inline;
+    justify-content: right;
+    color: lavenderblush;
+    text-align: left;
+    display: flex;
+    padding: 5%;
+}
+
+/* Work */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grid-wrapper {
+    display: flex;
+    width: 100%
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 4fr 0fr 1.5fr 0fr;
+    grid-template-rows: 2fr 0fr 1.5fr 2fr;
+    justify-content: center;
+    grid-auto-flow: dense;
+    gap: 10px;
+    width: 100%;
+    padding: 50px
+}
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    color: var(--teal);
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item .runbuddy {
+    
+}
+.runbuddy div {
+    background-image: url("./assets/runbuddy.jpg");
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
