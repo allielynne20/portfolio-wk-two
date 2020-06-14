@@ -233,3 +233,42 @@ h3 {
 .footer a {
     text-decoration: none;
 }
+
+/* Media Queries */
+
+/*980*/
+
+@media screen and (max-width: 980px) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+    
+      header nav {
+        justify-content: center;
+      }
+}
+
+/*768*/
+
+@media screen and (max-width: 768px) {
+    .grid-item,
+    .grid-item:first-child {
+      grid-column: 1 / -1;
+    }
+  
+    .grid-container {
+      grid-auto-rows: minmax(200px, 1fr);
+    }
+    .aboutme.para {
+        margin: 700px;
+    }
+}
