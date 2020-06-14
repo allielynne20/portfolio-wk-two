@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@ html {
     background: url("../tealsharkbig.jpg") no-repeat center center fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 /* Color Palette */
@@ -52,9 +52,15 @@ header nav ul {
 header a {
     text-decoration: none;
     padding: 50px;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
     color: var(--yellow);
+}
+a:hover {
+    background-color: var(--teal);
+    border: 1px thin var(--lightp);
+    border-radius: 10px;
+    padding: 10px
 }
 .hero {
 display: flex;
@@ -76,24 +82,41 @@ border-bottom: 2px solid lavenderblush;
     flex-wrap: wrap;
     flex-direction: row;
 }
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--yellow);
+    font-style: normal;
+    font-size: 20px;
+    padding: 30px;
+    margin: 30px;
+}
+.aboutme p {
+    padding: 20px;
+    margin: 20px;
+}
+.aboutme img {
+    border: 3px solid rgba(255,153,255, 1);
+    border-radius: 100px;
+    opacity: 0.75;
+}
+.aboutme .para {
+    border: 3px solid rgba(255,153,255, 1);
+    border-radius: 10px;
+    justify-content: center
+}
 h2 {
     display: inline;
     justify-content: left;
     color: var(--yellow);
     text-align: center;
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 50px;
     width: 100%; 
-    padding: 10px;
-    margin: 20px 65px;
+    padding: 70px;
+    margin: 30px 70px;
     border-bottom: 1px solid lavenderblush;
-}
-.about p {
-    display: inline;
-    justify-content: right;
-    color: lavenderblush;
-    text-align: left;
-    display: flex;
-    padding: 5%;
 }
 
 /* Work */
@@ -101,35 +124,60 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 25px;
+    margin: 25px;
+}
+h3 {
+    font-size: 15px;
+    color: var(--yellow);
+    font-style: normal;
+    padding: 20px;
 }
 .grid-wrapper {
     display: flex;
-    width: 100%
+    width: 80%
 }
 .grid-container {
     display: grid;
     grid-template-columns: 4fr 0fr 1.5fr 0fr;
     grid-template-rows: 2fr 0fr 1.5fr 2fr;
-    justify-content: center;
-    grid-auto-flow: dense;
+    justify-content: space-around;
+    grid-auto-flow: row;
     gap: 10px;
-    width: 100%;
     padding: 50px
+}
+.grid-container a:hover {
+    background-color:rgba(255,153,255, 1);
+    padding: 10px
 }
 .grid-item {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid pink;
-    color: var(--teal);
     display: flex;
     flex-wrap: wrap;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100%;
 }
-.grid-item .runbuddy {
-    
+.grid-item.runbuddy {
+    grid-column: span 14;
+    grid-row: span 2;
+    font-size: 12.80px;
+    background-image: url("../running.jpg");
 }
-.runbuddy div {
-    background-image: url("./assets/runbuddy.jpg");
+.grid-item.future-projects {
+    grid-column: span 14;
+    grid-row: span 2;
+    font-size: 12.80px;
+    background-image: url("../crayons.jpg");
+}
+.grid-item.challenges {
+    grid-column: span 14;
+    grid-row: span 14;
+    font-size: 12.80px;
+    background-image: url("../code.jpg");
 }
 
 /* Contact */
@@ -137,4 +185,23 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 20px 20px;
+    margin: 20px;
+    border: 20px;
+    border: 5px solid var(--pink);
+    border-radius: 10px;
+}
+.contactinfo a {
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: large;
+    font-style: normal;
+    padding: 20px
 }
