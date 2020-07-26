@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Allie / Web Development</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e13fd7249d.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Roboto+Mono:wght@423&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
@@ -15,10 +21,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#about"> About</a></li>
-                <li><a href="#work"> Work</a></li>
-                <li><a href="#contact"> Contact</a></li>
-                <li><a href="#"> Resume</a></li>
+                <li><a href="#about"><i class="far fa-address-card"></i>About</a></li>
+                <li><a href="#work"><i class="fas fa-code-branch"></i>Work</a></li>
+                <li><a href="#contact"><i class="far fa-address-book"></i>Contact</a></li>
+                <li><a href="#"><i class="far fa-file"></i>Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -30,87 +36,101 @@
 
     <!--About Section-->
     <section id="about" class="about">
-        <h2>About</h2>
+        <h2><i class="far fa-address-card"></i>About</h2>
     </section>
-    <section class="aboutme">
-        <p class="img">
-            <img src="./assets/softballme.JPG" alt="Me playing softball">
-        </p>
-        <p>
-            <img src="./assets/regme.jpg" alt="Me">
-        </p>
-        <p class="para">
-            <br>
-            I'm from North Carolina born and raised. I moved to Tucson, Arizona after college and then found my way to
-            sunny Florida. I was able to play softball and tennis in college as an NCAA athlete. I enjoy running, paddle
-            boarding, hiking, and pretty much anything outdoors!
-            <br>
-        </p>
-
+    <section class="container aboutme">
+        <div class="row">
+            <p class="col selfie">
+                <img src="./assets/images/mypicture.jpg" alt="Allie Watkins">
+            </p>
+            <p class="col para">
+                I'm from North Carolina born and raised. I moved to Tucson, Arizona after college and then found my way
+                to
+                sunny Florida. I was able to play softball and tennis in college as an NCAA athlete. I enjoy running,
+                paddle
+                boarding, hiking, and pretty much anything outdoors!
+            </p>
+        </div>
     </section>
 
     <!--Work Section-->
     <section id="work" class="work">
-        <h2>
-            Work
-        </h2>
+        <h2><i class="fas fa-code-branch"></i>Work</h2>
     </section>
-    <section class="work-grid">
 
-        <div class="grid-wrapper">
-
-            <div class="grid-container">
-
+    <section class="grid container">
+        <div class="row">
+            <div class="gcol col-4">
                 <a href="https://allielynne20.github.io/Run-Buddy/" class="grid-item runbuddy">
                     <div>
                         <h3>Run-Buddy Project</h3>
                     </div>
                 </a>
-
+            </div>
+            <div class="gcol col-4">
                 <a href="https://allielynne20.github.io/GroupProject1/" class="grid-item foodnfun">
                     <div>
                         <h3>Food 'n Fun</h3>
                     </div>
                 </a>
-
-                <a href="#" class="grid-item challenges">
+            </div>
+            <div class="gcol col-4">
+                <a href="https://allielynne20.github.io/weather-dashboard/" class="grid-item weather-dashboard">
                     <div>
-                        <h3>Challenges</h3>
+                        <h3>Weather Dashboard</h3>
                     </div>
                 </a>
-
             </div>
-
+        </div>
+        <div class="row">
+            <div class="gcol col-6">
+                <a href="https://allielynne20.github.io/git-it-done/" class="grid-item git-it-done">
+                    <div>
+                        <h3>Git-It-Done</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="gcol col-6">
+                <a href="https://allielynne20.github.io/taskmaster2.0/" class="grid-item taskmaster2.0">
+                    <div>
+                        <h3>Taskmaster 2.0</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gcol col-12">
+                <div>
+                    <h3>Future projects under development!</h3>
+                </div>
+            </div>
         </div>
 
     </section>
 
     <!--Contact Section-->
     <section id="contact" class="contact">
-        <h2>
-            Contact
-        </h2>
+        <h2><i class="far fa-address-book"></i>Contact</h2>
     </section>
     <section class="contactinfo">
         <address>
-            <a href="#"><img src="./assets/telephone.png">Phone</a>
-            <a href="#"><img src="./assets/mail.png">Email</a>
-            <a href="#"><img src="./assets/linkedin-logo.png">LinkedIn</a>
+            <a href="#" id="phone"><i class="contactclicker fas fa-phone-square-alt"></i>Phone</a>
+            <a href="#" id="email"><i class="contactclicker far fa-paper-plane"></i>Email</a>
+            <a href="#" id="linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
         </address>
     </section>
 
     <!--Footer-->
     <section class="footer">
-        <div>References:</div>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
-
-        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
